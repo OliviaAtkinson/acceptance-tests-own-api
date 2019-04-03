@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+
+		<div class = "container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class = "navbar-header">
+					<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-ex1-collapse">
+						<span class = "sr-only"> toggle navigation </span>
+						<span class = "icon-bar">  </span>
+						<span class = "icon-bar">  </span>
+						<span class = "icon-bar">  </span>
+					</button>
+					<a class= "navbar-brand" href="/"> app </a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li><%= link_to 'New Achievement', new_achievement_path %> </li>
+					</ul>
+				</div>
+			</nav>
+
+			<% if flash[:notice] %>
+				<div class = "alert alert_info">
+					<%= flash[:notice] %>
+				</div>
+			<% end%>
+
+
+			<%= yield %>
+		</div>
+    
+  </body>
+</html>

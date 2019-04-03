@@ -1,0 +1,165 @@
+# in this file is where all the data about our request is written.
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.twitter.com/1.1/statuses/update.json
+    body:
+      encoding: UTF-8
+      string: status=Read+a+book
+    headers:
+      User-Agent:
+      - TwitterRubyGem/6.2.0
+      Authorization:
+      - OAuth oauth_consumer_key="0zzaOjFhiv9OEBOWvw1EgQY7y", oauth_nonce="04d54360629f0e974648c99dacb1161d",
+        oauth_signature="U21hJcFH9uAxthQQ5IrthylSvUM%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1554195432", oauth_token="1001848699411197952-3fRQuV7Qmy13HXoQLVvvA4eWzha0lA",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '60'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 02 Apr 2019 08:57:12 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 02 Apr 2019 08:57:12 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A155419543261614832; Max-Age=63072000; Expires=Thu, 1 Apr 2021
+        08:57:12 GMT; Path=/; Domain=.twitter.com
+      - lang=en; Path=/
+      - personalization_id="v1_XyOK9h9o2r+RhT2asGKTHQ=="; Max-Age=63072000; Expires=Thu,
+        1 Apr 2021 08:57:12 GMT; Path=/; Domain=.twitter.com
+      Status:
+      - 403 Forbidden
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - 3d9a4e5ea5a2d92864bb9b96b3ca2137
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Response-Time:
+      - '118'
+      X-Transaction:
+      - 00073bb10014a3bf
+      X-Tsa-Request-Body-Time:
+      - '0'
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block; report=https://twitter.com/i/xss_report
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"code":187,"message":"Status is a duplicate."}]}'
+    http_version: 
+  recorded_at: Tue, 02 Apr 2019 08:57:12 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/user_timeline.json?count=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - TwitterRubyGem/6.2.0
+      Authorization:
+      - OAuth oauth_consumer_key="0zzaOjFhiv9OEBOWvw1EgQY7y", oauth_nonce="5703b611777d51d7bb233b70ae1e6683",
+        oauth_signature="wYeGy0iBxOVMYK97qJZUOp9%2Fukc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1554195432", oauth_token="1001848699411197952-3fRQuV7Qmy13HXoQLVvvA4eWzha0lA",
+        oauth_version="1.0"
+      Connection:
+      - close
+      Host:
+      - api.twitter.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Connection:
+      - close
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '1873'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 02 Apr 2019 08:57:12 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Tue, 02 Apr 2019 08:57:12 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_f
+      Set-Cookie:
+      - guest_id=v1%3A155419543280167430; Max-Age=63072000; Expires=Thu, 1 Apr 2021
+        08:57:12 GMT; Path=/; Domain=.twitter.com
+      - lang=en; Path=/
+      - personalization_id="v1_euuQ/mj2l2+xBD5bO1OslA=="; Max-Age=63072000; Expires=Thu,
+        1 Apr 2021 08:57:12 GMT; Path=/; Domain=.twitter.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - aa6197b47bf6e9af7ea0cd40895d53fa
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '900'
+      X-Rate-Limit-Remaining:
+      - '899'
+      X-Rate-Limit-Reset:
+      - '1554196332'
+      X-Response-Time:
+      - '148'
+      X-Transaction:
+      - 00bec48600ca0650
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block; report=https://twitter.com/i/xss_report
+    body:
+      encoding: UTF-8
+      string: '[{"created_at":"Tue Apr 02 08:48:58 +0000 2019","id":1113000355992887296,"id_str":"1113000355992887296","text":"Read
+        a book","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"source":"\u003ca
+        href=\"https:\/\/example.com\" rel=\"nofollow\"\u003etesting app poiuilk\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":1001848699411197952,"id_str":"1001848699411197952","name":"Olivia","screen_name":"Olivia20791119","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":0,"friends_count":3,"listed_count":0,"created_at":"Wed
+        May 30 15:31:58 +0000 2018","favourites_count":18,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":1,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"F5F8FA","profile_background_image_url":null,"profile_background_image_url_https":null,"profile_background_tile":false,"profile_image_url":"http:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_image_url_https":"https:\/\/abs.twimg.com\/sticky\/default_profile_images\/default_profile_normal.png","profile_link_color":"1DA1F2","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":true,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"lang":"en"}]'
+    http_version: 
+  recorded_at: Tue, 02 Apr 2019 08:57:12 GMT
+recorded_with: VCR 4.0.0
